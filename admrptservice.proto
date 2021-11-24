@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "github.com/macdnelsonplayhq/admrptsvc/admrptservice/admrptservice";
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.admreportssvc";
+option java_outer_classname = "AdmReportsProto";
+
+package admrptservice;
+
+service AdmRptService {
+  rpc SayHello(Message) returns (Message) {}
+}
+
+message Message {
+    string body = 1;
+  }
+  
